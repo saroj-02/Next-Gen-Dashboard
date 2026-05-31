@@ -163,7 +163,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<ThemeType>("dark");
   const [notifications, setNotifications] = useState<UserNotifications>(DEFAULT_NOTIFICATIONS);
   const [stats, setStats] = useState<StudentStats>(DEFAULT_STATS);
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(true);
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
   const [isSigningOut, setIsSigningOut] = useState<boolean>(false);
 
   // Load from localStorage on mount
